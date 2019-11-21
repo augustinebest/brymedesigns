@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="nav__header">
+        <header class="header_logo">
+            Bryme
+        </header>
+        <ul class="navigation__links">
+            <li id="about"><a href="about">About</a></li>
+            <li id="what_expect"><a href="whattoexpect">What to expect</a></li>
+            <li id="values"><a href="values">Our values</a></li>
+            <li id="services"><a href="services">Services</a></li>
+            <li id="testimonies"><a href="testimonies">Testimonies</a></li>
+            <li id="team"><a href="team">Our teams</a></li>
+            <li id="blog"><a href="blog">Blog</a></li>
+            <li id="contact"><a href="contact">Contact us</a></li>
+        </ul>
+    </nav>
+    <div class="mobile__header">
+        <div id="logo"><a href="javascript:;">Bryme</a></div>
+        <div class="hamburger" id="hamburger">
+            <div class="hamburger__content">
+                <div class="caret top"></div>
+                <div class="caret middle"></div>
+                <div class="caret bottom"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sidebar__navigation" id="sidebar">
+        <ul>
+            <li class="about__mob"><a href="about">About</a></li>
+            <li class="expect__mob"><a href="whattoexpect">What to expect</a></li>
+            <li class="value__mob"><a href="values">Our values</a></li>
+            <li class="service__mob"><a href="services">Services</a></li>
+            <li class="testimonies__mob"><a href="testimonies">Testimonies</a></li>
+            <li class="team__mob"><a href="team">Our teams</a></li>
+            <li class="blog__mob"><a href="blog">Blog</a></li>
+            <li class="contact__mob"><a href="contact">Contact us</a></li>
+        </ul>
+</div>
+<div class="gallery__section">
+    <div class="gallery__text">
+        We offer you sustainable and memorable services, real estate consulting services and enginerring training.
+    </div>
+</div>
+
+    <script src="JS/jquery-min.js"></script>
+    <script src="JS/main.js"></script>
+    <script>
+        $(document).ready(function() {
+
+        alert(1)
+        })
+        $('#hamburger').click(function() {
+            $('.hamburger__content').toggleClass('close');
+            $('.sidebar__navigation').toggleClass('active');
+        })
+    </script>
+</body>
+</html>
