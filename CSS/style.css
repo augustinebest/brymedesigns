@@ -20,6 +20,7 @@ ul {margin: 0; padding: 0}
     position: fixed;
     transition: 0.5s;
     font-size: 13px;
+    background-color:  #fff;
 }
 
 .mobile__header {
@@ -144,17 +145,26 @@ ul {
     width: 30px;
 }
 
-.navigation__links li:nth-child(8) {
+.navigation__links li:nth-child(7) {
     background: #bb042f;
-    padding: 5px 10px;
+    padding: 7px 10px;
     border-radius: 50px;
+    margin-top: -5px;
+    border: 2px solid #bb042f;
+    transition: 0.8s;
 }
 
-.navigation__links li:nth-child(8) a {
+.navigation__links li:nth-child(7):hover {
+    box-shadow: -3px 5px 8px #aaa3a3;
+}
+
+.navigation__links li:nth-child(7) a {
+    font-family: Circular Std,Verdana,Arial,sans-serif;
+    font-weight: bolder;
     color: #fff;
 }
 
-.navigation__links li:nth-child(8)::after {
+.navigation__links li:nth-child(7)::after {
     width: 0; height: 0;
 }
 
@@ -208,7 +218,7 @@ ul {
     color: #fff;
     width: 100%;
     height: 200px;
-    margin-top: 30px;
+    margin-top: 15px;
     /* margin-bottom: 100px; */
     background-color: rgb(11, 63, 131);
     font-family: Circular Std,Verdana,Arial,sans-serif;
@@ -257,13 +267,125 @@ ul {
 }
 /* About Us Ends */
 
+/* Values Starts */
+.values__content {
+    max-width: 700px;
+    height: auto;
+    margin: 20px auto auto auto; 
+    box-shadow: -1px 7px 8px #d6d6d6;
+    padding-bottom: 30px;
+}
+.values__image {
+    width: 100%;
+    height: 250px;
+}
+.show__value_image {
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid #f00; */
+    background-image: url('../IMG/val1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0;
+}
+.values__cont {
+    width: 85%;
+    margin: 40px auto auto auto;
+}
+/* Values Ends */
+
+/* Services Starts */
+.services__container {
+    width: 90%;
+    height: auto;
+    margin: 20px auto auto auto;
+    /* display: flex; justify-content: center; align-items: center; */
+}
+.services__ {
+    display: flex; justify-content: center; align-items: center;
+}
+.ser__cont1Image {
+    width: 43%; height: 590px;
+    box-shadow: -1px 7px 8px #d6d6d6;
+    margin: 20px;
+}
+.show__serImage {
+    width: 280px; height: 180px;
+    /* border: 1px solid #f00; */
+    margin: 30px auto auto auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0;
+}
+.image_one {
+    background-image: url('../IMG/SVG/construction.svg');
+}
+.image_two {
+    background-image: url('../IMG/SVG/architecture.svg');
+}
+.image_three {
+    background-image: url('../IMG/SVG/training.svg');
+}
+.image_four {
+    background-image: url('../IMG//SVG/planning.svg');
+}
+.service__title {
+    margin: auto;
+    width: 320px;
+    text-align: center;
+    font-weight: bold;
+    color: #121212;
+}
+.service__description {
+    font-family: Circular Std, Verdana, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 1.65;
+    color: #888a93;
+    padding: 13px;
+}
+/* Services Ends */
+
+/* Contact us Starts */
+.contact_ {
+    margin-top: 30px;
+}
+.c_form {
+    width: 100%;
+    display: flex; justify-content: center;
+}
+.contact_form {
+    width: 500px;
+    padding: 10px;
+}
+.contact_form form input {
+    width: 100%;
+    margin-bottom: 8px;
+    height: 40px; border: 1px solid rgb(11, 63, 131);
+    padding-left: 8px;
+
+}
+.contact_form form textarea {
+    width: 100%; height: 120px;
+    border: 1px solid rgb(11, 63, 131);
+    padding: 10px;
+}
+.contact_form form input[type='submit'] {
+    cursor: pointer;
+    margin-top: 8px;
+    background: rgb(11, 63, 131);
+    color: #fff;
+    border: none; outline: none;
+}
+/* Contact us Ends */
+
 /* Footer Starts */
 footer {
     margin-top: 70px;
     width: 100%;
     height: auto;
-    background: #000;
-    color: #d6d6d6;
+    background: #151414;
+    color: #757575;
     font-size: 16px;
     font-family: Circular Std,Verdana,Arial,sans-serif;
     padding-top: 30px; padding-bottom: 50px;
@@ -276,9 +398,14 @@ footer {
 }
 .logo__section {
     width: 33%; height: 260px;
+    color: #d6d6d6;
 }
 .contact_links {
     width: 33%; height: 270px;
+    color: #d6d6d6;
+}
+.address_links p {
+    color: #d6d6d6;
 }
 .address_links {
     width: 33%; height: 220px;
@@ -291,11 +418,12 @@ footer {
     margin-top: 6px;
 }
 .contact_links li a {
-    color: #d6d6d6;
+    color: #757575;
     line-height: 1.65;
     text-decoration: none;
     outline: none;
     font-size: 16px;
+    font-family: Circular Std,Verdana,Arial,sans-serif;
 }
 .contact_links li a:hover {
     color: rgb(11, 63, 131);
@@ -342,6 +470,15 @@ footer {
     }
     .address_links {
         width: 100%;
+    }
+    .services__ {
+        display: block;
+    }
+    .ser__cont1Image {
+        width: 100%;
+        margin: 0;
+        min-height: 650px;
+        margin-bottom: 30px;
     }
 }
 
