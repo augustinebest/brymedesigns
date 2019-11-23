@@ -54,9 +54,15 @@
         <section class="contact_">
             <div class="contact__sect c_form">
                 <div class="contact_form">
-                    <form action="">
-                        <input type="text" placeholder="Enter your full name" />
-                        <input type="email" placeholder="Enter your email" />
+                    <form class="email-form" name="newsletter" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                        <div hidden aria-hidden="true">
+                            <label>
+                                Don’t fill this out if you're human: 
+                                <input name="bot-field" />
+                            </label>
+                        </div>
+                        <input type="text" placeholder="Enter your full name" required/>
+                        <input type="email" placeholder="Enter your email" name="email" id="email" required/>
                         <textarea name="textarea" placeholder="Enter your message..."></textarea>
                         <input type="submit" class="logbtn" value="Send message">
                     </form>
@@ -90,5 +96,6 @@
             </footer>
             <script src="JS/jquery-min.js"></script>
             <script src="JS/main.js"></script>
+            <script src="JS/form.js"></script>
 </body>
 </html>
