@@ -1,6 +1,6 @@
 html, body {
     margin: 0; padding: 0;
-    font-family: "Open Sans", sans-serif;
+    font-family: Circular Std, Verdana, Arial, sans-serif;
 }
 
 * {
@@ -19,7 +19,7 @@ ul {margin: 0; padding: 0}
     padding: 13px;
     position: fixed;
     transition: 0.5s;
-    font-size: 13px;
+    font-size: 14px;
     background-color:  #fff;
 }
 
@@ -98,7 +98,7 @@ ul {margin: 0; padding: 0}
 .sidebar__navigation a {
     outline: none;
     color: #fff; text-decoration: none;
-    font-family: "Open Sans", sans-serif;
+    font-family: Circular Std, Verdana, Arial, sans-serif;
     transition: 0.3s ease;
 }
 .active_class {
@@ -113,7 +113,7 @@ ul {
     margin-top: 0px;
     padding-right: 15px;
     text-decoration: none;
-    font-size: 13px;
+    font-size: 14px;
 }
 
 .navigation__links li{
@@ -171,7 +171,7 @@ ul {
 .navigation__links li a {
     text-decoration: none;
     color: #000;
-    font-family: "Open Sans", sans-serif;
+    font-family: Circular Std, Verdana, Arial, sans-serif;
 }
 
 /* Gallery Section Starts */
@@ -212,6 +212,73 @@ ul {
     /* width: 38ch; */
 }
 /* Gallery Section Ends */
+
+/* What to expect Starts */
+section {
+    width: 95%;
+    margin: auto;
+}
+#what_expect {
+    font-family: Circular Std, Verdana, Arial, sans-serif;
+    /* font-weight: 400; */
+    font-size: 16px;
+    line-height: 1.65;
+    color: #888a93;
+}
+.what_to_expect {
+    margin-top: 40px;
+}
+.content_one {
+    display: flex;
+}
+.image_icon {
+    width: 50%;
+    /* border: 1px solid #f00; */
+}
+.description {
+    width: 50%;
+    font-size: 16px;
+    /* border:  1px solid #00f; */
+}
+section .p {
+    text-align: center;
+    width: 200px;
+    font-family: "Open Sans", sans-serif;
+    text-transform: uppercase;
+    margin-top: 80px;
+    color: #070000;
+}
+section .p::after {
+    content: "";
+    width: 30px; height: 4px;
+    background-color: rgb(11, 63, 131);
+    display: block;
+    margin-left: 80px;
+    margin-top: 4px;
+}
+.description {
+    display: flex; justify-content: center; align-items: center;
+}
+.description__content {
+    padding: 6px; 
+    /* text-align: center; */
+}
+.image_icon_one {
+    width: 50%;
+    display: flex; justify-content: center; align-items: center;
+}
+.show_image {
+    background-image: url('../IMG/ph.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0;
+    width: 320px;
+    height: 300px;
+}
+.result_icon {
+    background-image: url('../IMG/r.jpg');
+}
+/* What to expect Ends */
 
 /* About Us Starts */
 .aboutus__container {
@@ -274,6 +341,11 @@ ul {
     margin: 20px auto auto auto; 
     box-shadow: -1px 7px 8px #d6d6d6;
     padding-bottom: 30px;
+    font-family: Circular Std, Verdana, Arial, sans-serif;
+    /* font-weight: 400; */
+    font-size: 19px;
+    line-height: 1.65;
+    color: #888a93;
 }
 .values__image {
     width: 100%;
@@ -353,6 +425,13 @@ ul {
 .c_form {
     width: 100%;
     display: flex; justify-content: center;
+}
+.p_contact {
+    width: 500px;
+    margin: auto;
+    padding: 10px;
+    font-family: Circular Std, Verdana, Arial, sans-serif;
+    color: #3f4047;
 }
 .contact_form {
     width: 500px;
@@ -448,6 +527,25 @@ footer {
     .nav__header {
         display: none;
     }
+    .content_one {
+        display: block;
+    }
+    .image_icon {
+        width: 100%;
+    }
+    .description {
+        width: 98%;
+        margin: auto;
+    }
+    .show_image {
+        width: 338px; 
+    }
+    .image_icon_one {
+        width: 100%;
+    }
+    .horizontal_rule {
+        border-top: 1px solid #000;
+    }
     .aboutus__content {
         display: block;
         width: 95%;
@@ -477,8 +575,9 @@ footer {
     .ser__cont1Image {
         width: 100%;
         margin: 0;
-        min-height: 650px;
+        height: auto;
         margin-bottom: 30px;
+        padding-top: 10px; padding-bottom: 10px;
     }
 }
 
@@ -488,6 +587,12 @@ footer {
     }
     .mobile__header {
         display: none;
+    }
+    .show_image {
+        width: 500px;
+    }
+    .horizontal_rule {
+        margin-top: 60px;
     }
 }
 
