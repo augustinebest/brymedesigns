@@ -427,7 +427,7 @@ section .p::after {
     display: flex; justify-content: center;
 }
 .p_contact {
-    width: 500px;
+    max-width: 500px;
     margin: auto;
     padding: 10px;
     font-family: Circular Std, Verdana, Arial, sans-serif;
